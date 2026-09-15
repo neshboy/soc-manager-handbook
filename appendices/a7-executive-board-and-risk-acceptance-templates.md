@@ -5,7 +5,7 @@ author: "author-agent"
 reviewer: "technical-reviewer-agent"
 status: "reviewed"
 last_validated: "2026-09-15"
-depends_on: []
+depends_on: ["part24", "part25", "part29"]
 ---
 
 # Appendix A7 — Executive, Board & Risk-Acceptance Templates
@@ -23,10 +23,10 @@ depends_on: []
 **[EXECUTIVE]** The SOC manager or the CISO uses this skeleton to build the quarterly (or per-bylaws) board or audit-committee deck described in Part 24 §5. Start from all five sections every cycle and drop any section with nothing real to report — a slide added only to fill the slot is the same failure mode as a metrics dashboard nobody prunes. This template does not decide which metrics belong in the deck or how to translate a raw number into a risk narrative; that's Part 24 §3's translation recipe and §6's scorecard, applied before a single field below gets filled in.
 
 ```markdown
-TEMPLATE -- Board deck template (five-section skeleton), permanent ID TMPL-2401
+TEMPLATE — Board deck template (five-section skeleton), permanent ID TMPL-2401
 
 SECTION 1 -- RISK POSTURE SUMMARY (1 slide, 3-5 lines)
-<!-- One line per metric that scored 6+ on Part 24 Table (S6)'s selection scorecard. -->
+<!-- One line per metric that scored 6+ on Part 24 S6's selection scorecard. -->
 | Metric | This Quarter | Last Quarter | Trend | Risk Translation (one sentence) | What This Should Prompt the Board To Do |
 |---|---|---|---|---|---|
 |        |               |              |       |                                  |                                          |
@@ -70,7 +70,7 @@ SKEPTICAL-QUESTION PREP (not presented; rehearsed beforehand per Part 24 S7)
 **[SENIOR MANAGER]** The SOC manager, or whoever the escalation path in Part 25 §2.1 names, fills this out the moment a known, standing risk is first identified — not months into living with it — to force Table 25.1's four-dimension scoring into writing before the risk gets formally accepted, escalated, or defaulted into by nobody stopping the process carrying it. The memo does not calculate the dollar-exposure figure or verify the compensating control on its own; both come from the manager's own analysis, informed by Part 5's and Part 9's models where relevant. What the memo forces is that the reasoning gets dated, written down, and given a calendar date to be checked again — the exact discipline `CASE-2501` shows going missing for six months.
 
 ```markdown
-TEMPLATE -- Risk-acceptance memo, permanent ID TMPL-2501
+TEMPLATE — Risk-acceptance memo, permanent ID TMPL-2501
 
 Risk ID / short title:
 Date identified:
@@ -108,7 +108,7 @@ Sign-off: Name / Title / Date
 **[SENIOR MANAGER]** The facilitator named for a given incident — never someone who worked the incident directly, per Part 29 §3.1 — fills this out for the per-incident review, scheduled 5 to 10 business days after the incident closes. The template's fixed field for a role-based timeline exists because a document that circulates outside the review room and still names an individual analyst against a specific action teaches the floor to stop volunteering honest detail, the exact failure `CASE-2901` walks through. This template does not, by itself, make a review blameless — that depends on the facilitation mechanics in Part 29 §4.1 and the psychological-safety precondition Part 19 builds; a form filled out by a room that doesn't feel safe yet is still an incomplete record, however cleanly the fields are completed.
 
 ```markdown
-TEMPLATE -- Post-incident organizational review, permanent ID TMPL-2901
+TEMPLATE — Post-incident organizational review, permanent ID TMPL-2901
 
 Incident ID / near-miss flag ID:
 Trigger reason: [ mandatory severity tier / discretionary request / random sample / near-miss flag ]
@@ -139,7 +139,7 @@ Facilitator sign-off:                 SOC manager sign-off:
 **[SENIOR MANAGER]** This is a standing register, not a per-incident form — every finding logged from every filled `TMPL-2901` lands here, and the standing review board (Part 29 §3.2) queries this register on its own monthly or quarterly cadence, independent of any single incident's timing. The tracker does not run the dedup matching described in Part 29 §6.2 automatically; deciding whether a new finding matches a prior one "in substance, not exact wording" is a human judgment call the standing board makes each cycle, not a keyword search this register performs on its own.
 
 ```markdown
-TEMPLATE -- Corrective-action tracker, permanent ID TMPL-2902
+TEMPLATE — Corrective-action tracker, permanent ID TMPL-2902
 
 | Field | Entry |
 |---|---|

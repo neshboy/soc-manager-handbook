@@ -101,7 +101,7 @@ The table below maps common escalation triggers to the tier boundary they cross 
 
 | Trigger | From → To | Basis | Example Threshold |
 |---|---|---|---|
-| Severity | Tier 1 → Tier 2 | Playbook severity score | Sev ≥ 3 (SOC Playbook Handbook, Part 29 — Playbook Severity Model) |
+| Severity | Tier 1 → Tier 2 | Playbook severity score | Medium or above (SOC Playbook Handbook, Part 29 — Playbook Severity Model) |
 | No playbook match | Tier 1 → Tier 2 | Triage produced no clear disposition path | Unresolved after 15 minutes against the matched playbook |
 | SLA risk | Tier 1 → Tier 2 | Time in queue approaching breach | Unresolved at 50% of the SLA window |
 | Confirmed impact | Tier 2 → Tier 3 / IR | Scoping confirms lateral movement, data access, or persistence | Any confirmed post-exploitation activity |

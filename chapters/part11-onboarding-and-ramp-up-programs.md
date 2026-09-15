@@ -228,7 +228,7 @@ A single Phase 4 failure is a remediation trigger, not a termination trigger —
 
 ## 9. Measuring whether the program is working
 
-**[SENIOR MANAGER]** Four numbers tell a manager whether the program is actually working, and none of them duplicate the queue metrics SOC Playbook Handbook, Part 32 — Metrics already owns (MTTR, handle time, FP rate). These are onboarding-specific and have no earlier definition anywhere in the series:
+**[SENIOR MANAGER]** Four numbers tell a manager whether the program is actually working, and none of them duplicate the queue metrics SOC Playbook Handbook, Part 32 — Metrics already owns (MTTR, FP rate) or this book's own operational terms (handle time, Part 5 §2; backlog age, Part 9 §1). These are onboarding-specific and have no earlier definition anywhere in the series:
 
 - **Time-to-Level-4** — days from start date to full independent shift authority. A rising trend across cohorts, with no change in the hiring bar, usually means Phase 2 or Phase 3 coaching capacity hasn't scaled with hiring volume.
 - **Phase 3 spot-check pass-rate trajectory** — the week-by-week curve, not just the final number that clears the gate. A flat curve that jumps to 95% right before the gate is graded, rather than climbing gradually, is worth a second look at whether spot-checks are scheduled predictably enough for an analyst, or a sympathetic reviewer, to prepare for them in advance.

@@ -171,16 +171,16 @@ CONCEPTUAL SAMPLE -- illustrative arithmetic, not sourced benchmark data
 Baseline ticket volume:           ~2,400 tickets/month
 QA sample rate before the cut:    6% (~144 reviewed tickets/month), low/medium severity
 QA sample rate after the cut:     3% (~72 reviewed tickets/month), low/medium severity only
-                                   (P1/P2 sampling held at 100%, untouched)
+                                   (High/Critical sampling held at 100%, untouched)
 Reviewer time freed:              ~72 fewer reviews x 20 min/review = ~1,440 minutes
                                    = ~24 reviewer-hours/month reallocated to direct triage
 ```
 
-**[SENIOR MANAGER]** The manager picked a blend from Table 25.2: cutting the QA sample rate on low- and medium-severity tickets from 6% to 3%, freeing roughly 24 reviewer-hours a month for direct queue work, while holding P1/P2 sampling at 100% specifically because that's where a missed error costs the most. The reasoning at the time was defensible — the cut fell only on the tail the organization could most afford to see less of, not on the highest-consequence tickets.
+**[SENIOR MANAGER]** The manager picked a blend from Table 25.2: cutting the QA sample rate on low- and medium-severity tickets from 6% to 3%, freeing roughly 24 reviewer-hours a month for direct queue work, while holding High/Critical sampling at 100% specifically because that's where a missed error costs the most. The reasoning at the time was defensible — the cut fell only on the tail the organization could most afford to see less of, not on the highest-consequence tickets.
 
 > **Management Autopsy — "cut the QA sample rate, not the SLA target"**
 >
-> **The decision:** Reduce QA sampling on low/medium-severity tickets from 6% to 3%, reallocating the freed reviewer time to direct triage, while leaving P1/P2 sampling untouched.
+> **The decision:** Reduce QA sampling on low/medium-severity tickets from 6% to 3%, reallocating the freed reviewer time to direct triage, while leaving High/Critical sampling untouched.
 >
 > **Why it seemed reasonable:** Of every option on Table 25.2, this one appeared to concentrate its cost on the lowest-consequence slice of the queue, protected the highest-severity tickets completely, and required no new spend during a freeze that made new spend impossible anyway.
 >

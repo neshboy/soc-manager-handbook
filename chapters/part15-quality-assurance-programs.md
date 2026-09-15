@@ -47,7 +47,7 @@ depends_on: ["part10", "soc-playbook:part27"]
 
 **[SENIOR MANAGER]** The table below compares the three sampling approaches a QA program actually chooses between, on the dimensions that drive the choice: what gets pulled, what it's good at catching, and where it leaves a gap (CONCEPTUAL SAMPLE — illustrative comparison, not validated against a specific program's measured outcomes).
 
-**Table 15.1 — Sampling approach comparison.** *(CONCEPTUAL SAMPLE.)* Use this table to decide which approach — or, more often, which blend of approaches — fits a specific queue's risk profile before building the sampling formula in §2.3.
+**Table 15.1 — Sampling approach comparison.** *(CONCEPTUAL SAMPLE.)* Use this table to decide which approach — or, more often, which blend of approaches — fits a specific queue's risk profile before building the sampling formula in §2.3. *(A note on labels: "P1/P2/P3/P4" below is this section's own illustrative shorthand for a high-to-low priority split, not the Informational/Low/Medium/High/Critical severity bands SOC Playbook Handbook, Part 29 — Playbook Severity Model defines; don't read a direct mapping between the two.)*
 
 | Approach | How the Sample Is Pulled | Good At | Where It Leaves a Gap |
 |---|---|---|---|
