@@ -49,11 +49,12 @@ depends_on: []
 
 ## 4. Metrics
 
-**[SENIOR MANAGER]** One structural rule governs every row in this section: metric *definitions* live entirely in the companion volume; metric *use* — headcount modeling, board narratives, benchmarking caution, QA scoring — stays in this book. Redefining a metric locally anywhere in this book is treated as a defect, not a stylistic choice.
+**[SENIOR MANAGER]** One structural rule governs every row in this section: a metric's *definition* lives with whichever volume actually owns it — the companion Playbook Handbook for MTTR, MTTA, and false-positive rate, or this book itself for handle time, backlog age, and MTTD, none of which the Playbook defines. Metric *use* — headcount modeling, board narratives, benchmarking caution, QA scoring — stays in this book either way. Redefining a metric that belongs to the other volume is treated as a defect, not a stylistic choice.
 
 | Topic / Question | Book & Part | What You'll Find There | Cited From (this book) |
 |---|---|---|---|
-| What MTTR, handle time, and false-positive rate precisely mean, and how they're instrumented consistently | SOC Playbook Handbook, Part 32 — Metrics | The fixed definitions every headcount model (Part 5), queue-health signal (Part 9), onboarding metric (Part 11), training review (Part 12), QA rubric (Part 15), attrition leading indicator (Part 18), budget cost-per-alert figure (Part 20), board translation (Part 24), and benchmark comparison (Part 31) treats as an already-settled input | Parts 1, 5, 9, 11, 12, 15, 18, 20, 24, 30, 31, 33 |
+| What MTTR and false-positive rate precisely mean, and how they're instrumented consistently | SOC Playbook Handbook, Part 32 — Metrics | The fixed definitions every headcount model (Part 5), queue-health signal (Part 9), onboarding metric (Part 11), training review (Part 12), QA rubric (Part 15), attrition leading indicator (Part 18), budget cost-per-alert figure (Part 20), board translation (Part 24), and benchmark comparison (Part 31) treats as an already-settled input | Parts 1, 5, 9, 11, 12, 15, 18, 20, 24, 30, 31, 33 |
+| What this book means by "handle time," "backlog age," or "MTTD" | This book's own operational definitions — Part 5 §2 (handle time), Part 9 §1 (backlog age), Part 24 §3 (MTTD) | Terms the Playbook Handbook never defines; owned locally so headcount modeling (Part 5), queue-health signal (Part 9), and board translation (Part 24) have one audited definition instead of three local ones | Parts 1, 5, 9, 24 |
 
 ## 5. Detection Engineering & Telemetry
 
