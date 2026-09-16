@@ -93,6 +93,18 @@ Four reviewers — two team leads, a dedicated QA specialist, and the SOC manage
 
 A calibration session followed the structure in §3.2, producing two written anchor examples for each of the categories that showed the worst spread. Reviewers then rescored the same 10-ticket batch blind — without being shown their own earlier scores — roughly two weeks later. Agreement rose to 84%. A second session six weeks after that, prompted by a handful of new edge cases the first anchors hadn't covered, held agreement at 86%, which the program set as its working threshold: scores from a rubric with less than roughly 80% inter-rater agreement across a calibration batch aren't yet trustworthy enough to route into a coaching conversation, let alone anything Part 16's performance-management process would act on.
 
+**[SENIOR MANAGER]** The 58%/84%/86% figures above are a raw agreement rate — the share of scores landing within one point of the batch median — and a manager reading them should know exactly what that rate leaves out: it never asks whether two reviewers would have landed on the same score anyway, by chance, given how each reviewer's own scores happen to be distributed. The statistic built specifically to correct for that is Cohen's kappa, developed for this exact problem — independent raters classifying the same cases — by Jacob Cohen in 1960:
+
+```
+kappa = (p0 - pe) / (1 - pe)
+```
+
+- **p0** — the observed proportion of agreement between two reviewers on the batch (the raw rate this section's percentages approximate).
+- **pe** — the proportion of agreement expected by chance alone, computed from each reviewer's own marginal scoring distribution: how often reviewer A lands on a given score, multiplied by how often reviewer B lands on that same score, summed across every score on the scale.
+- **kappa** — agreement with the chance component removed from both the top and bottom of the fraction; 0 means the pair does no better than chance, 1 means perfect agreement.
+
+The gap between the two numbers is exactly where a calibration program can fool itself. Two reviewers can land on the identical score for 90% of a batch and still produce a low kappa, if most of that 90% is both of them defaulting to the same easy, high-frequency score — most sampled tickets are routine, so "everything checked out, score it a 5" is the common answer both reviewers reach without really exercising judgment — rather than genuine shared judgment on the small number of tickets that were actually hard to call. A raw-percentage threshold like this section's 80% floor can be hit by reviewers quietly converging on leniency, not by reviewers agreeing better on the cases that matter. With four reviewers, as in the worked example above, kappa isn't one panel-wide number — it's computed for each of the six reviewer pairs separately and read as a set, because collapsing straight to an average can bury exactly the single divergent pair §5.3's People Risk Trap warns about, where one reviewer's scores run consistently apart from the other three (Cohen, Jacob. "A Coefficient of Agreement for Nominal Scales." *Educational and Psychological Measurement*, Vol. 20, No. 1, 1960, pp. 37–46: https://doi.org/10.1177/001316446002000104).
+
 > **Field Test**
 > **Setup:** A rubric and at least two active reviewers, with no calibration session run yet this quarter.
 > **Action:** Have every active reviewer independently score the same batch of eight to 10 already-closed tickets, without comparing notes first. Run one calibration session per §3.2, then have the same reviewers blind-rescore the identical batch at least two weeks later.

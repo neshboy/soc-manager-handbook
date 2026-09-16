@@ -4,6 +4,9 @@ Real, externally verified sources cited inline in the chapters (as `(Author/Orga
 
 This list is additive: if a future revision adds another verified inline citation anywhere in the book, add it here once, in author-alphabetical order, rather than creating a second references file.
 
+- Cohen, Jacob. "A Coefficient of Agreement for Nominal Scales." *Educational and Psychological Measurement*, Vol. 20, No. 1, 1960, pp. 37–46. https://doi.org/10.1177/001316446002000104
+  - Cited in: Part 15 §3.3, for the kappa statistic (agreement corrected for chance, given each reviewer's own marginal scoring distribution) grounding this section's discussion of raw inter-rater agreement percentages and why they can overstate genuine reviewer consensus.
+
 - Czeisler, Charles A.; Duffy, Jeanne F.; Shanahan, Theresa L.; Brown, Emery N.; et al. "Stability, Precision, and Near-24-Hour Period of the Human Circadian Pacemaker." *Science*, Vol. 284, No. 5423, 1999, pp. 2177–2181. https://doi.org/10.1126/science.284.5423.2177
   - Cited in: Part 17 §1.1, for the finding that the human circadian pacemaker's intrinsic period averages about 24.18 hours (not exactly 24), established via a forced-desynchrony protocol under controlled lighting.
 
