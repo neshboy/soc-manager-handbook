@@ -17,7 +17,7 @@ This is a handbook for the person who runs a SOC — not the analyst working a q
 
 ## What's synthetic vs. real
 
-Every case study, dollar figure, and worked example in this book is either a **CONCEPTUAL** illustration, a **COMPOSITE CASE EXAMPLE** (a plausible scenario built from patterns, not one real event), or explicitly cited as an **OFFICIAL REFERENCE** to real published research (e.g. shift-work circadian science) — never a claim that a real, identifiable organization or incident is being described unless genuinely public and named. Diagrams are original Mermaid flowcharts and decision trees. This book contains no fabricated screenshots or invented "real" company data.
+Every case study, dollar figure, and worked example in this book is either a **CONCEPTUAL** illustration, a **COMPOSITE CASE EXAMPLE** (a plausible scenario built from patterns, not one real event), or explicitly cited as an **OFFICIAL REFERENCE** to real published research (e.g. shift-work circadian science) — never a claim that a real, identifiable organization or incident is being described unless genuinely public and named. Diagrams are original Mermaid flowcharts and decision trees. This book contains no fabricated screenshots or invented "real" company data. **[REFERENCES.md](./REFERENCES.md)** lists every real external source cited inline, with the part/section it backs.
 
 ## How it was built
 
@@ -42,4 +42,4 @@ python add_watermark.py
 - `chapters/`, `appendices/` — the 33 parts + 8 appendices, Markdown source of record.
 - `assets/diagrams/` — rendered Mermaid SVGs.
 - `build/` — the build/render/watermark tooling above.
-- `BOOK-INDEX.md`, `STYLE-GUIDE.md`, `CASE-INVENTORY.md`, `VISUAL-INVENTORY.md` — cross-cutting project documentation.
+- `BOOK-INDEX.md`, `STYLE-GUIDE.md`, `CASE-INVENTORY.md`, `VISUAL-INVENTORY.md`, `REFERENCES.md` — cross-cutting project documentation.
