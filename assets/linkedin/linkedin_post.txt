@@ -1,0 +1,7 @@
+The SOC Manager's Operating Handbook. Built for the person who runs the SOC. Free. Public.
+A SOC doesn't fail because of one bad rule. It fails from bad staffing or bad incentives just as often — and those failures don't get a post-mortem, because by the time they're visible they look like a training problem or a bad week.
+From headcount and capacity modeling → shift design → hiring and competency → quality assurance → burnout and retention → vendor and budget management → executive reporting → crisis leadership → SOC maturity.
+Inside: headcount and shrinkage modeling, shift-pattern and coverage design, structured interviewing and competency matrices, QA sampling and calibration, performance coaching vs. detection-debt diagnosis, burnout and attrition mechanics, MSSP and vendor contract management, budget and TCO modeling, board-ready executive reporting, risk-acceptance frameworks, post-incident organizational review, and SOC maturity benchmarking — 61 real management-decision case studies and 37 original diagrams across 33 parts.
+Every part is written for whoever actually owns the decision on that page — frontline manager, senior manager, HR/people, vendor/procurement, and executive — because a chapter on quality assurance reads differently to a shift lead than it does to a CISO.
+Full PDF: https://raw.githubusercontent.com/neshboy/soc-manager-handbook/master/SOC_Manager_Operating_Handbook.pdf
+Repo: https://github.com/neshboy/soc-manager-handbook
